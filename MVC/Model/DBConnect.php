@@ -1,6 +1,6 @@
 <?php
 
-namespace Product\Model;
+namespace App\Model;
 
 use PDO;
 
@@ -10,17 +10,12 @@ class DBConnect
     protected $user;
     protected $password;
 
-    /**
-     * DBConnect constructor.
-     * @param $dsn
-     * @param $user
-     * @param $password
-     */
+
     public function __construct()
     {
-        $this->dsn = "mysql:host=localhost;dbname=products; charset =utf8";
+        $this->dsn = "mysql:host=localhost;dbname=module2; charset =utf8";
         $this->user = "root";
-        $this->password = "Hoaithhuong2105@";
+        $this->password = "Hoaithuong2105@";
     }
 
     public function connect()
